@@ -6,9 +6,9 @@ Configuración Inicial: Modelo del TurtleBot. Antes de comenzar, asegúrate de c
 
 Archivos de Lanzamiento:
 Configura el entorno inicial del robot en Gazebo:
-catkin_make
-source devel/setup.bash
-roslaunch inicio.launch
+catkin_make | 
+source devel/setup.bash | 
+roslaunch inicio.launch | 
 Posicionamiento del Robot: Utiliza la flecha verde en Gazebo para posicionar el robot en el lugar inicial.
 Ejecuta todas las tareas necesarias para la simulación completa: roslaunch todo.launch
 
