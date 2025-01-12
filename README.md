@@ -14,12 +14,41 @@ Ejecuta todas las tareas necesarias para la simulación completa: roslaunch todo
 
 
 Instalación y Uso de face_recognition
-Para habilitar el reconocimiento facial en el proyecto, sigue los pasos a continuación:
-1. Actualiza los paquetes del sistema: sudo apt update
-2. Instala las dependencias necesarias:
+PARA UTILIZAR FACE_RECOGNITION, instalar lo siguiente:
+
+1. Actualizar el sistema:
+----------------------------------------------------------------------
+sudo apt update
+
+2. Instalar las dependencias esenciales:
+----------------------------------------------------------------------
 sudo apt install build-essential cmake libboost-all-dev
+
+3. Instalar las herramientas para Python:
+----------------------------------------------------------------------
 sudo apt install python3-dev python3-pip
+
+4. Instalar las bibliotecas de OpenCV:
+----------------------------------------------------------------------
 sudo apt install libopencv-dev
-3. Instala las bibliotecas requeridas: pip3 install dlib
-                                       pip3 install face_recognition
-4. Ejecuta el script de reconocimiento facial si lo quieres para ver cómo funciona por su cuenta: python3 reconocimiento_facial.py
+
+5. Instalar las bibliotecas de Python necesarias:
+----------------------------------------------------------------------
+pip3 install dlib
+pip3 install face_recognition
+
+6. Preparar el entorno ROS (opcional si usas un nodo ROS):
+----------------------------------------------------------------------
+- Verifica que el archivo sea ejecutable:
+chmod +x reconocimiento_facial.py
+
+- Coloca el archivo en la carpeta `scripts` de tu paquete ROS si estás trabajando en un proyecto ROS.
+
+7. Ejecutar el archivo de reconocimiento facial:
+----------------------------------------------------------------------
+python3 reconocimiento_facial.py
+
+
+MÁS FÁCIL: Para instalar todas las bibliotecas de Python que se necesitan en un solo comando: 
+----------------------------------------------------------------------
+pip3 install face_recognition opencv-python numpy scipy
