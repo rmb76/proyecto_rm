@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- Lanzar: export TURTLEBOT3_MODEL=waffle-->
+  <!-- Lanzar roscore -->
+  <node pkg="roslaunch" type="roscore" name="roscore" output="screen"/>
+
+  <!-- Configurar la variable de entorno TURTLEBOT3_MODEL -->
+  <env name="TURTLEBOT3_MODEL" value="waffle" />
+
+  <!-- Lanzar la simulación de Gazebo con el mundo de TurtleBot3 -->
+  <include file="$(find turtlebot3_gazebo)/launch/turtlebot3_house.launch" />
+
+  <!-- Lanzar la navegación de TurtleBot3 con un mapa definido -->
+  <include file="$(find turtlebot3_navigation)/launch/turtlebot3_navigation.launch">
+    <arg name="map_file" value="/home/vil/robots_moviles_ws/src/user_gui/maps/map.yaml" />
+  </include>
+
+</launch>

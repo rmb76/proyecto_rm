@@ -1,0 +1,37 @@
+rooms:
+  salon:
+    x_min: -4.76
+    x_max: -0.28
+    y_min: 0.24
+    y_max: 4.84
+  entrada:
+    x_min: -7.12
+    x_max: -5.51
+    y_min: 1.35 
+    y_max: 5.09
+  cocina:
+    x_min: -7.47
+    x_max: -5.53
+    y_min: -3.51
+    y_max: 0.75
+  aseo:
+    x_min: 0.37
+    x_max: 1.97
+    y_min: 1.26
+    y_max: 4.7
+  habitacion:
+    x_min: 2.61 
+    x_max: 6.94
+    y_min: 0.65
+    y_max: 4.5
+  comedor:
+    x_min: 5.25
+    x_max: 6.92
+    y_min: -5.02
+    y_max: -0.82
+  pasillo:
+    x_min: -0.06
+    x_max: 2.24
+    y_min: 0.14
+    y_max: 0.46
+    

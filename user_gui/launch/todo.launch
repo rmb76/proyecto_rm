@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<launch>
+
+  <!-- Nodo para la interfaz gráfica GUI.py -->
+  <node pkg="user_gui" type="GUI.py" name="gui_node" output="screen"/>
+  
+  <!-- Nodo para la interfaz gráfica del operador operator_gui.py -->
+  <node pkg="user_gui" type="operator_gui.py" name="operator_gui_node" output="screen"/>
+
+  <!-- Nodo para la máquina de estados algoritmo_base.py -->
+  <node pkg="user_gui" type="algoritmo_base.py" name="state_machine_node" output="screen"/>
+
+  <!-- Nodo para la detección de caras face_detection_node.py -->
+  <node pkg="user_gui" type="face_detection_node.py" name="face_detection_node" output="screen"/>
+
+</launch>
+
