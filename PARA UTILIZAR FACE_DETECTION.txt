@@ -28,10 +28,6 @@ chmod +x reconocimiento_facial.py
 
 - Coloca el archivo en la carpeta `scripts` de tu paquete ROS si estás trabajando en un proyecto ROS.
 
-7. Ejecutar el archivo de reconocimiento facial:
-----------------------------------------------------------------------
-python3 reconocimiento_facial.py
-
 
 MÁS FÁCIL: Para instalar todas las bibliotecas de Python que se necesitan en un solo comando: 
 ----------------------------------------------------------------------
